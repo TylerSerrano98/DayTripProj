@@ -72,6 +72,7 @@ function itinerary() {
     let chosenRestaurant = restaurant(); 
     let chosenTrans = transport();
     let chosenEntertainment = entertainment();
+    console.log(chosenDestination, chosenRestaurant, chosenTrans, chosenEntertainment);
 }
 itinerary()
 
