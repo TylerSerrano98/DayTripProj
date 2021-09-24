@@ -14,8 +14,9 @@
        console.log('Selected Destination: ' + result);
        newOption = prompt('Are you satisfied with your destination option?');  
       }
+      return result
     }
-destination()
+
 
     function restaurant() {
         let restaurants = ['italian', 'mexican', 'american', 'japanese'];
@@ -30,8 +31,8 @@ destination()
        console.log('Selected Restaurant: ' + foodChoice);
        newOption = prompt('Are you satisfied with your restaurant option?');  
       }
+      return foodChoice;
     }
-restaurant()
 
     function transport() {
         let trans = ['car', 'train', 'bus', 'heli'];
@@ -46,8 +47,8 @@ restaurant()
        console.log('Selected Transport: ' + transOption);
        newOption = prompt('Are you satisfied with your transport option?');  
       }
+      return transOption;
     }
-transport()
 
     function entertainment() {
         let activity = ['live music', 'video games', 'bowling', 'pool hall'];
@@ -62,6 +63,26 @@ transport()
         console.log('Selected Entertainment: ' + pickedActivity);
         newOption = prompt('Are you satisfied with your entertainment option?');  
        }
-
+       return pickedActivity;
     }
-entertainment()
+
+
+function itinerary() {
+    let chosenDestination = destination();
+    let chosenRestaurant = restaurant(); 
+    let chosenTrans = transport();
+    let chosenEntertainment = entertainment();
+}
+itinerary()
+
+function runGenerator() { 
+   let newOption = prompt('are you satisfied with your days results?:')
+    while( newOption === "no") {
+        itinerary()
+        break;
+    }
+    if( newOption !== "no"){
+        console.log('completed trip!');
+    }
+}
+runGenerator();
