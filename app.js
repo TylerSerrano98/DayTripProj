@@ -76,13 +76,13 @@ function itinerary() {
 itinerary()
 
 function runGenerator() { 
-   let newOption = prompt('are you satisfied with your days results?:')
-    while( newOption === "no") {
-        itinerary()
-        break;
-    }
-    if( newOption !== "no"){
-        console.log('completed trip!');
-    }
-}
-runGenerator();
+    let newOption = prompt('are you satisfied with your days results?:')
+     while( newOption === "no") {
+         itinerary()
+         break;
+     }
+     if( newOption !== "no"){
+         console.log('completed trip!');
+     }
+ }
+ runGenerator();
