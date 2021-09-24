@@ -72,7 +72,7 @@ function itinerary() {
     let chosenRestaurant = restaurant(); 
     let chosenTrans = transport();
     let chosenEntertainment = entertainment();
-    console.log(chosenDestination, chosenRestaurant, chosenTrans, chosenEntertainment);
+    console.log('you are going to the:' + ' ' + chosenDestination + ',', 'the type of food chosen is' + ' ' + chosenRestaurant + ',' ,'you have chosen to take the:'+ ' ' + chosenTrans + ',', 'your chosen form of entertainment is:' + ' ' + chosenEntertainment + ',');
 }
 itinerary()
 
